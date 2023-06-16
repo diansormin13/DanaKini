@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Login with data have been registered to DanaKini</description>
+   <name>LG-4</name>
+   <tag>LOGIN</tag>
+   <comment></comment>
+   <testCaseGuid>fa6d3994-2e6e-4b8f-b13d-2d6d4f604237</testCaseGuid>
+</TestCaseEntity>

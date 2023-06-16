@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>register a new user to DataKini</description>
+   <name>URG-2</name>
+   <tag>Positive Testacase</tag>
+   <comment></comment>
+   <testCaseGuid>a07ebffc-816f-4f8c-b21f-906995c492ea</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,41 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+Mobile.startApplication('C:\\Users\\hp\\Downloads\\Danakini_3.11.7_apkcombo.com.apk', false)
+
+'username'
+Mobile.setText(findTestObject('LOGIN/android.widget.EditText - EMAIL'), 'test0000test123@gmail.com', 0, FailureHandling.STOP_ON_FAILURE)
+
+'password'
+Mobile.sendKeys(findTestObject('LOGIN/android.widget.EditText - PASSWORD'), 'QWEqwe123')
+
+'button masuk'
+Mobile.tap(findTestObject('LOGIN/android.widget.Button - BUTTON MASUK'), 0, FailureHandling.STOP_ON_FAILURE)
+
+'waiting page load'
+Mobile.delay(4)
+
+Mobile.getText(findTestObject('LOGIN/android.widget.TextView - Halo, TESTER'), 0)
+
+'Take screenshot of current device screen'
+Mobile.takeScreenshot("D:\\screenshot1.png")
+
+'Close application on current selected android\'s device'
+Mobile.closeApplication()
+
